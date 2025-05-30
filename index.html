@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Catya Kaer Webpage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Catya Kaer</div>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><button class="nav-btn active" data-section="home">Home</button></li>
+      <li><button class="nav-btn" data-section="about">About</button></li>
+      <li><button class="nav-btn" data-section="gallery">Gallery</button></li>
+      <li><button class="nav-btn" data-section="favorite">Favorite</button></li>
+    </ul>
+    <button id="themeToggle" class="theme-btn">Change Theme</button>
+    <button id="musicToggle" class="music-btn"><span class="music-icon">🎵</span> Music</button>
+  </nav>
+  
+  <main>
+    <section id="home" class="content-section active">
+      <div class="section-inner home-inner">
+        <div class="main-container">
+          <div class="text-content">
+            <h1>Catya Kaer.</h1>
+            <p>
+              Catya Kaer is a sweet girl who loves art, music, and all things sweet.<br>
+             She finds happiness in the little things and dreams of sharing her happiness with the world.
+            </p>
+            <a class="explore-btn" href="https://t.me/catyazn" target="_blank" rel="catyazn">Akun</a>
+          </div>
+          <div class="img-content">
+            <div class="img-box">
+              <img src="./asset/logo.png" alt="Catya Kaer" class="aki-img"/>
+              <div class="img-label">Catya Kaer</div>
+              <div class="img-icon">
+                <img src="./asset/love.png" alt="icon" />
+              </div>
+              <div class="img-stats">
+                <button class="love-btn" id="loveBtn" aria-label="Love"><span id="loveIcon">❤</span></button>
+                <input type="range" id="loveRange" min="0" max="100" value="85" readonly/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="about" class="content-section">
+      <div class="section-inner about-inner">
+        <div class="about-container">
+          <div class="about-text">
+            <h2>About Catya Kaer</h2>
+            <p>
+              Catya Kaer is known for her vibrant personality and boundless creativity. A lover of colors, melodies, and stories, Catya finds inspiration in everything around her.<br><br>
+              Behind her cheerful smile is a gentle heart that wishes to brighten everyone’s day. She believes that every moment, no matter how small, can be filled with magic if you look at it with love.
+            </p>
+            <div class="about-romantic-quote">
+              <span>"Let your heart be the artist; paint your own happiness."</span>
+            </div>
+          </div>
+          <div class="about-photo">
+            <img src="./asset/29.jpeg" alt="Catya Kaer" />
+            <div class="about-heart-animation">💖</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="content-section">
+      <div class="section-inner gallery-inner">
+        <div>
+          <h2>Gallery</h2>
+          <div class="gallery-grid">
+            <div class="album-frame" data-album="0">
+              <img src="./asset/a1.jpeg" alt="Album 1">
+              <div class="frame-title">Album 1</div>
+            </div>
+            <div class="album-frame" data-album="1">
+              <img src="./asset/a2.jpeg" alt="Album 2">
+              <div class="frame-title">Album 2</div>
+            </div>
+            <div class="album-frame" data-album="2">
+              <img src="./asset/a3.jpeg" alt="Album 3">
+              <div class="frame-title">Album 3</div>
+            </div>
+            <div class="album-frame" data-album="3">
+              <img src="./asset/a4.jpeg" alt="Album 4">
+              <div class="frame-title">Album 4</div>
+            </div>
+            <div class="album-frame" data-album="4">
+              <img src="./asset/a5.jpeg" alt="Album 5">
+              <div class="frame-title">Album 5</div>
+            </div>
+            <div class="album-frame" data-album="5">
+              <img src="./asset/a6.jpeg" alt="Album 6">
+              <div class="frame-title">Album 6</div>
+            </div>
+          </div>
+          <div id="albumModal" class="album-modal">
+            <div class="modal-content">
+              <span class="close-modal">&times;</span>
+              <div class="modal-title"></div>
+              <div class="modal-photos"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="favorite" class="content-section">
+      <div class="section-inner favorite-inner">
+        <div>
+          <div class="favorite-container">
+            <div class="favorite-card">
+              <div class="favorite-icon">🍰</div>
+              <div>
+                <div class="favorite-label">Favorite Food</div>
+                <div class="favorite-value">Nasi Goreng & Ayam Geprek</div>
+              </div>
+            </div>
+            <div class="favorite-card">
+              <div class="favorite-icon">🎨</div>
+              <div>
+                <div class="favorite-label">Favorite Color</div>
+                <div class="favorite-value">Pink, Blue, Purple</div>
+              </div>
+            </div>
+            <div class="favorite-card">
+              <div class="favorite-icon">🐱</div>
+              <div>
+                <div class="favorite-label">Favorite Animal</div>
+                <div class="favorite-value">Cat (loves their soft purrs!)</div>
+              </div>
+            </div>
+            <div class="favorite-card">
+              <div class="favorite-icon">💌</div>
+              <div>
+                <div class="favorite-label">Dream Day</div>
+                <div class="favorite-value">meet a handsome, kind and gentle man named kariem
+                </div>
+              </div>
+            </div>
+            <div class="favorite-card">
+              <div class="favorite-icon">🌸</div>
+              <div>
+                <div class="favorite-label">Wish</div>
+                <div class="favorite-value">Get Rich</div>
+              </div>
+            </div>
+            <div class="favorite-card">
+              <div class="favorite-icon">🎵</div>
+              <div>
+                <div class="favorite-label">Favorite Music</div>
+                <div class="favorite-value">All Music Kpop (saya gatau soalnya apa)</div>
+              </div>
+            </div>
+          </div>
+          <div class="favorite-romantic-note">
+            <span>
+              “Sprinkle a little joy wherever you go!”
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Modal -->
+    <div id="musicModal" class="music-modal">
+      <div class="music-content">
+        <span class="close-music">&times;</span>
+        <div class="music-title">Playlist ForYou</div>
+        <div class="music-list">
+          <button class="music-track" data-src="./asset/akad.mp3">Akad</button>
+          <button class="music-track" data-src="./asset/sampaiakhir.mp3">Sampai Akhir</button>
+          <button class="music-track" data-src="./asset/garomanits.mp3">Ga Romantis</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio player: SELALU TERLIHAT DI BAWAH KANAN -->
+    <audio id="audioPlayer" controls style="position:fixed;right:24px;bottom:28px;z-index:2000;box-shadow:0 2px 8px #0002;border-radius:12px;background:#fff"></audio>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
